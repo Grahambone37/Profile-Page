@@ -19,4 +19,34 @@ let dogDetails = document.createElement('div')
 dogDetails.setAttribute('class', 'dog-details')
 content.append(dogDetails)
 
+//apend description to dogDetails
+let description = document.createElement('h3');
+description.textContent = "Description:"
+dogDetails.append(description)
 
+//add paragraph to dogDetails
+let paragraph = document.createElement('p')
+paragraph.textContent = "This gentle dog is aloof toward her owner, and never comes when called. She always acts as though any stranger she meets will harm her, and dislikes other animals."
+dogDetails.append(paragraph)
+
+//add feeding times header
+let feedingTimes = document.createElement('h3');
+feedingTimes.textContent = "Feeding Times:"
+dogDetails.append(feedingTimes)
+
+//add unordered list of times to dogDetails
+let feedingTimesList = document.createElement('ul')
+
+let morning = document.createElement('li')
+morning.textContent = "9:00 am"
+feedingTimesList.append(morning)
+
+let afternoon = document.createElement('li')
+afternoon.textContent = "12:00 pm"
+feedingTimesList.append(afternoon)
+
+let evening = document.createElement('li')
+evening.textContent = "5:00 pm"
+feedingTimesList.append(evening)
+
+dogDetails.append(feedingTimesList)
